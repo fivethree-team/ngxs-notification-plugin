@@ -123,8 +123,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "src/tsconfig.app.json",
+              "src/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "ionic-cordova-build": {
@@ -173,7 +178,44 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "ngxs-ionic-notify-plugin": {
+      "root": "projects/ngxs-ionic-notify-plugin",
+      "sourceRoot": "projects/ngxs-ionic-notify-plugin/src",
+      "projectType": "library",
+      "prefix": "fiv",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngxs-ionic-notify-plugin/tsconfig.lib.json",
+            "project": "projects/ngxs-ionic-notify-plugin/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngxs-ionic-notify-plugin/src/test.ts",
+            "tsConfig": "projects/ngxs-ionic-notify-plugin/tsconfig.spec.json",
+            "karmaConfig": "projects/ngxs-ionic-notify-plugin/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngxs-ionic-notify-plugin/tsconfig.lib.json",
+              "projects/ngxs-ionic-notify-plugin/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }

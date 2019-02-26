@@ -17,6 +17,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ngxs-ionic-notify-plugin": [
+        "dist/ngxs-ionic-notify-plugin"
+      ],
+      "ngxs-ionic-notify-plugin/*": [
+        "dist/ngxs-ionic-notify-plugin/*"
+      ]
+    }
   }
 }
