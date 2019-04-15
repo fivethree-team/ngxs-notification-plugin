@@ -1,7 +1,6 @@
-import { NotificationEngine } from '@fivethree/ngxs-notification-plugin';
+import { NotificationEngine, NotificationType } from '@fivethree/ngxs-notification-plugin';
 import { Injectable } from '@angular/core';
 import { ToastController } from '@ionic/angular';
-import { NotificationType } from 'projects/ngxs-notification-plugin/src/public_api';
 
 @Injectable({
   providedIn: 'root'

@@ -20,7 +20,7 @@ Import the module into your root application module:
 ```typescript
 import { NgModule } from '@angular/core';
 import { NgxsModule } from '@ngxs/store';
-import { NgxsIonicRouterPluginModule } from '@fivethree/ngxs-ionic-router-plugin';
+import { NgxsNotificationPluginModule } from '@fivethree/ngxs-notification-plugin';
 import { ToastService } from './toast.service';
 
 @NgModule({
@@ -38,7 +38,7 @@ Create a service called for example `ToastService` which has to implement `Notif
 import { NotificationEngine } from '@fivethree/ngxs-notification-plugin';
 import { Injectable } from '@angular/core';
 import { ToastController } from '@ionic/angular';
-import { NotificationType } from 'projects/ngxs-notification-plugin/src/public_api';
+import { NotificationType } from '@fivethree/ngxs-notification-plugin';
 
 @Injectable({
   providedIn: 'root'
