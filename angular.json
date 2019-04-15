@@ -15,6 +15,11 @@
           "options": {
             "tsConfig": "projects/ngxs-notification-plugin/tsconfig.lib.json",
             "project": "projects/ngxs-notification-plugin/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "project": "projects/ngxs-notification-plugin/ng-package.prod.json"
+            }
           }
         },
         "test": {
