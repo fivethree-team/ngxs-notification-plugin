@@ -1,36 +1,36 @@
 {
   "$schema": "./node_modules/@angular-devkit/core/src/workspace/workspace-schema.json",
   "version": 1,
-  "defaultProject": "ngxs-ionic-notify-plugin",
+  "defaultProject": "ngxs-notification-plugin",
   "newProjectRoot": "projects",
   "projects": {
-    "ngxs-ionic-notify-plugin": {
-      "root": "projects/ngxs-ionic-notify-plugin",
-      "sourceRoot": "projects/ngxs-ionic-notify-plugin/src",
+    "ngxs-notification-plugin": {
+      "root": "projects/ngxs-notification-plugin",
+      "sourceRoot": "projects/ngxs-notification-plugin/src",
       "projectType": "library",
-      "prefix": "ngxs-ionic-notify-plugin",
+      "prefix": "ngxs-notification-plugin",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngxs-ionic-notify-plugin/tsconfig.lib.json",
-            "project": "projects/ngxs-ionic-notify-plugin/ng-package.json"
+            "tsConfig": "projects/ngxs-notification-plugin/tsconfig.lib.json",
+            "project": "projects/ngxs-notification-plugin/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngxs-ionic-notify-plugin/src/test.ts",
-            "tsConfig": "projects/ngxs-ionic-notify-plugin/tsconfig.spec.json",
-            "karmaConfig": "projects/ngxs-ionic-notify-plugin/karma.conf.js"
+            "main": "projects/ngxs-notification-plugin/src/test.ts",
+            "tsConfig": "projects/ngxs-notification-plugin/tsconfig.spec.json",
+            "karmaConfig": "projects/ngxs-notification-plugin/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngxs-ionic-notify-plugin/tsconfig.lib.json",
-              "projects/ngxs-ionic-notify-plugin/tsconfig.spec.json"
+              "projects/ngxs-notification-plugin/tsconfig.lib.json",
+              "projects/ngxs-notification-plugin/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"

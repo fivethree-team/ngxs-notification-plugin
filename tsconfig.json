@@ -19,12 +19,9 @@
       "dom"
     ],
     "paths": {
-      "ngxs-ionic-notify-plugin": [
-        "dist/ngxs-ionic-notify-plugin"
+      "@fivethree/ngxs-notification-plugin": [
+        "dist/@fivethree/ngxs-notification-plugin"
       ],
-      "ngxs-ionic-notify-plugin/*": [
-        "dist/ngxs-ionic-notify-plugin/*"
-      ]
     }
   }
 }

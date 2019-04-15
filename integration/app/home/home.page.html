@@ -6,7 +6,20 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
+<ion-content>
+  <ion-button (click)="success()">
+    Success
+  </ion-button>
+  <ion-button (click)="hint()">
+    Hint
+  </ion-button>
+  <ion-button (click)="warning()">
+    Warning
+  </ion-button>
+  <ion-button (click)="error()">
+    Error
+  </ion-button>
+  <ion-button (click)="unknownError()">
+    UnknownError
+  </ion-button>
 </ion-content>
