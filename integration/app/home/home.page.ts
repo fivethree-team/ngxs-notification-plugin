@@ -26,6 +26,12 @@ export class HomePage {
     }));
   }
 
+  changePassword(oldPassword: string, newPassword: string) {
+    this.store.dispatch(new UnknownErrorNotification(oldPassword, newPassword))
+      .subscribe(() => this.store.dispatch(new SuccessNotification('Your password has been successfully changed.')),
+        (error) => this.store.dispatch(new UnknownErrorNotification(error)));
+  }
+
   hint() {
     this.store.dispatch(new HintNotification('Hint', {
       showCloseButton: true

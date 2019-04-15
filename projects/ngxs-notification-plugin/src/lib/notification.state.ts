@@ -44,7 +44,7 @@ export class NotificationState {
 
     @Action(WarningNotification)
     warningNotification(ctx: StateContext<NotificationStateModel>, action: WarningNotification) {
-        this._engine.warningNotification(action.message, action.options, action.warning, action.actions);
+        this._engine.warningNotification(action.message, action.warning, action.options, action.actions);
         ctx.setState({
             notification: action.message,
             type: 'warning',
@@ -54,7 +54,7 @@ export class NotificationState {
 
     @Action(ErrorNotification)
     errorNotification(ctx: StateContext<NotificationStateModel>, action: ErrorNotification) {
-        this._engine.errorNotification(action.message, action.options, action.error, action.actions);
+        this._engine.errorNotification(action.message, action.error, action.options, action.actions);
         ctx.setState({
             notification: action.message,
             type: 'error',
@@ -64,7 +64,7 @@ export class NotificationState {
 
     @Action(UnknownErrorNotification)
     unknownErrorNotification(ctx: StateContext<NotificationStateModel>, action: UnknownErrorNotification) {
-        this._engine.unknownErrorNotification(action.options, action.error, action.actions);
+        this._engine.unknownErrorNotification(action.error, action.options, action.actions);
         ctx.setState({
             type: 'unknown-error',
             error: action.error

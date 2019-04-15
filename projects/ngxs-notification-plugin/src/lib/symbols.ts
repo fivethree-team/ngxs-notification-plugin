@@ -7,7 +7,7 @@ export type NotificationType = 'success' | 'hint' | 'warning' | 'error' | 'unkno
 export interface NotificationEngine {
     successNotification(message: string | any, options?: any, actions?: any | any[]);
     hintNotification(message: string | any, options?: any, actions?: any | any[]);
-    warningNotification(message: string | any, options?: any, warning?: any, actions?: any | any[]);
-    errorNotification(message: string | any, options?: any, error?: any, actions?: any | any[]);
-    unknownErrorNotification(options?: any, error?: any, actions?: any | any[]);
+    warningNotification(message: string | any, warning?: any, options?: any, actions?: any | any[]);
+    errorNotification(message: string | any, error?: any, options?: any, actions?: any | any[]);
+    unknownErrorNotification(error?: any, options?: any, actions?: any | any[]);
 }

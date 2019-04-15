@@ -23,14 +23,14 @@ export class WarningNotification {
 export class ErrorNotification {
     static readonly type = '[Notification] ErrorNotification';
     constructor(public readonly message: string | any,
-        public readonly options?: any,
         public readonly error?: any,
+        public readonly options?: any,
         public readonly actions?: any | any[]) { }
 }
 
 export class UnknownErrorNotification {
     static readonly type = '[Notification] UnknownErrorNotification';
-    constructor(public readonly options?: any,
-        public readonly error?: any,
+    constructor(public readonly error?: any,
+        public readonly options?: any,
         public readonly actions?: any | any[]) { }
 }
