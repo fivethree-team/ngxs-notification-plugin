@@ -20,19 +20,24 @@ export class HomePage {
   }
 
   success() {
-    this.store.dispatch(new SuccessNotification('yea'));
+    this.store.dispatch(new SuccessNotification('Success', {
+      duration: 0,
+      showCloseButton: true
+    }));
   }
 
   hint() {
-    this.store.dispatch(new HintNotification('yea'));
+    this.store.dispatch(new HintNotification('Hint', {
+      showCloseButton: true
+    }));
   }
 
   warning() {
-    this.store.dispatch(new WarningNotification('yea'));
+    this.store.dispatch(new WarningNotification('Warning'));
   }
 
   error() {
-    this.store.dispatch(new ErrorNotification('yea'));
+    this.store.dispatch(new ErrorNotification('Error'));
   }
 
   unknownError() {

@@ -1,11 +1,39 @@
 // http://ionicframework.com/docs/theming/
-@import '~@ionic/angular/css/core.css';
-@import '~@ionic/angular/css/normalize.css';
-@import '~@ionic/angular/css/structure.css';
-@import '~@ionic/angular/css/typography.css';
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
 
-@import '~@ionic/angular/css/padding.css';
-@import '~@ionic/angular/css/float-elements.css';
-@import '~@ionic/angular/css/text-alignment.css';
-@import '~@ionic/angular/css/text-transformation.css';
-@import '~@ionic/angular/css/flex-utils.css';
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+.toast-success {
+  --background: var(--ion-color-success-tint);
+  --border-color: var(--ion-color-success-shade);
+  --border-style: none none none solid;
+  --border-width: 8px;
+}
+
+.toast-hint {
+  --background: var(--ion-color-secondary-tint);
+  --border-color: var(--ion-color-secondary-shade);
+  --border-style: none none none solid;
+  --border-width: 8px;
+}
+
+.toast-warning {
+  --background: var(--ion-color-warning-tint);
+  --border-color: var(--ion-color-warning-shade);
+  --border-style: none none none solid;
+  --border-width: 8px;
+}
+
+.toast-error {
+  --background: var(--ion-color-danger-tint);
+  --border-color: var(--ion-color-danger-shade);
+  --border-style: none none none solid;
+  --border-width: 8px;
+}
