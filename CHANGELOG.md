@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/fivethree-team/ngxs-notification-plugin/compare/v0.2.0...v0.2.1) (2019-07-23)
+
+
+### Features
+
+* **ng:** update angular 6 to 8 ([1d782dd](https://github.com/fivethree-team/ngxs-notification-plugin/commit/1d782dd))
+
+
+
 # 0.2.0 (2019-07-23)
 
 

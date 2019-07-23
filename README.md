@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/%40fivethree%2Fngxs-notification-plugin.svg)](https://www.npmjs.com/@fivethree/ngxs-notification-plugin)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/fivethree-team/ngxs-notification-plugin/blob/master/LICENSE)
 
-Notification Plugin for Angular 7.2.1 or higher and NGXS 3.3.4 or higher.
+Notification Plugin for Angular 6 to 8 and NGXS 3.3.4 or higher.
 
 ## 📦 Installation
 
