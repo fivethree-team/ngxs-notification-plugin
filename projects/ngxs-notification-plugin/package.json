@@ -1,6 +1,6 @@
 {
   "name": "@fivethree/ngxs-notification-plugin",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "NGXS Notification Plugin",
   "keywords": [
     "fivethree",
@@ -18,7 +18,7 @@
     "url": "https://github.com/fivethree-team/ngxs-notification-plugin/issues"
   },
   "peerDependencies": {
-    "@angular/core": "^6.0.0 || ^7.0.0 || ^8.0.0",
+    "@angular/core": ">=7.2.1 <9.0.0",
     "@ngxs/store": ">=3.3.4"
   }
 }
