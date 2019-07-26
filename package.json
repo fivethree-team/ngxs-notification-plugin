@@ -1,5 +1,5 @@
 {
-  "name": "ngxs-ionic-notify-plugin",
+  "name": "@fivethree/ngxs-notification-plugin",
   "version": "0.2.1",
   "author": "Marc Stammerjohann",
   "homepage": "https://github.com/marcjulian/ngxs-notification-plugin",
