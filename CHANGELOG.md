@@ -1,3 +1,13 @@
+# [0.3.0](https://github.com/fivethree-team/ngxs-notification-plugin/compare/v0.2.1...v0.3.0) (2020-01-16)
+
+
+### Features
+
+* **ng:** support angular 9 ([ece052d](https://github.com/fivethree-team/ngxs-notification-plugin/commit/ece052d619c401720324c991d784593aec91d9e0))
+* **ng:** update to angular 8 ([889fcbd](https://github.com/fivethree-team/ngxs-notification-plugin/commit/889fcbd466fdf17a41b0c66bb3ff675777d60ace))
+
+
+
 ## [0.2.1](https://github.com/fivethree-team/ngxs-notification-plugin/compare/v0.2.0...v0.2.1) (2019-07-23)
 
 
