@@ -3,7 +3,12 @@
 [![npm version](https://badge.fury.io/js/%40fivethree%2Fngxs-notification-plugin.svg)](https://www.npmjs.com/@fivethree/ngxs-notification-plugin)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/fivethree-team/ngxs-notification-plugin/blob/master/LICENSE)
 
-Notification Plugin for Angular 6 to 8 and NGXS 3.3.4 or higher.
+Notification Plugin for Angular 8 or higher and NGXS 3.3.4 or higher.
+
+| Angular | @ngxs/store | @fivethree/@fivethree/ngxs-ionic-router-plugin |
+| ------- | ----------- | ---------------------------------------------- |
+| 8/9     | 3.6.x+      | 0.3.x+                                         |
+| 7       | 3.3.4+      | 0.2.1                                          |
 
 ## 📦 Installation
 
@@ -15,6 +20,7 @@ yarn add @fivethree/ngxs-notification-plugin
 ```
 
 ## 🔨 Usage
+
 Import the module into your root application module:
 
 ```typescript
@@ -24,10 +30,10 @@ import { NgxsNotificationPluginModule } from '@fivethree/ngxs-notification-plugi
 import { ToastService } from './toast.service';
 
 @NgModule({
-    imports: [
-        NgxsModule.forRoot(states),
-        NgxsNotificationPluginModule.forRoot(ToastService)
-    ]
+  imports: [
+    NgxsModule.forRoot(states),
+    NgxsNotificationPluginModule.forRoot(ToastService)
+  ]
 })
 export class AppModule {}
 ```
@@ -44,10 +50,9 @@ import { NotificationType } from '@fivethree/ngxs-notification-plugin';
   providedIn: 'root'
 })
 export class ToastService implements NotificationEngine {
-
   private static SHORT_DURATION = 3000;
 
-  constructor(private toast: ToastController) { }
+  constructor(private toast: ToastController) {}
 
   successNotification(message: string, options?: any, actions?: any) {
     this.showToast(message, 'success', options);
@@ -69,7 +74,7 @@ export class ToastService implements NotificationEngine {
     this.showToast('Unknown error', 'error', options);
   }
 
-  async showToast(message: string, type: NotificationType, options?: any ) {
+  async showToast(message: string, type: NotificationType, options?: any) {
     const toast = await this.toast.create({
       message: message,
       cssClass: `toast-${type}`,
