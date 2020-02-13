@@ -1,3 +1,12 @@
+# [0.4.0](https://github.com/fivethree-team/ngxs-notification-plugin/compare/v0.3.0...v0.4.0) (2020-02-13)
+
+
+### Features
+
+* **ng:** add injectable to state for angular v9 ([72f984c](https://github.com/fivethree-team/ngxs-notification-plugin/commit/72f984cfeebec197bd468395457caacfd28ce6e2))
+
+
+
 # [0.3.0](https://github.com/fivethree-team/ngxs-notification-plugin/compare/v0.2.1...v0.3.0) (2020-01-16)
 
 
