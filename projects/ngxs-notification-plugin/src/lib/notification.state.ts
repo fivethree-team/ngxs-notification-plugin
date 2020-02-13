@@ -4,7 +4,7 @@ import {
   NOTIFICATION_ENGINE,
   NotificationEngine
 } from './symbols';
-import { Inject } from '@angular/core';
+import { Inject, Injectable } from '@angular/core';
 import {
   SuccessNotification,
   HintNotification,
@@ -22,6 +22,7 @@ export interface NotificationStateModel {
 @State<NotificationStateModel>({
   name: 'notification'
 })
+@Injectable()
 export class NotificationState {
   constructor(
     @Inject(NOTIFICATION_ENGINE) private _engine: NotificationEngine
